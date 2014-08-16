@@ -114,4 +114,6 @@ Run rails!
 
 Go to http://localhost:3000/products
 
+Adjusted textarea
+
 

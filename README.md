@@ -34,17 +34,23 @@ correct missing libsqlite3-dev
 rerun bundle install
 
 	bundle install
+
+Add to git...
+
 	git init
 	git add .
 	git commit -m "Initial release"
+
+Run scaffold:
+
 	rails generate scaffold Product title:string description:text \
 	 image_url:string price:decimal
 
-generates error:
+Generates error:
 
 	runtimes.rb:22: syntax error
 
-solution: install ruby 1.9
+Solution: install ruby 1.9
 	
 	sudo apt-get install ruby1.9.3
 	sudo apt-get remove ruby1.8
@@ -74,9 +80,25 @@ So install TheRubyRacer:
 
 	sudo gem install therubyracer
 
-
 Added to github:
 
 	git remote add origin git@github.com:hpaluch/depot.git
 	...
 	git push -u origin master	
+
+And finally finally scaffold:
+
+	rails generate scaffold Product title:string description:text \
+	 image_url:string price:decimal
+	Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+
+What? Aarrrrgh!
+
+	sudo apt-get install nodejs
+
+
+	rails generate scaffold Product title:string description:text \
+	 image_url:string price:decimal
+
+Yeah! Done.
+

@@ -1,5 +1,19 @@
 This is sample application from Rails book
 ==========================================
+This application comes from Czech translation of the book "Agile Web development with Rails".
+
+Original Czech Book and code Source is available on http://knihy.cpress.cz/ruby-on-rails.html (click on "Soubory ke stažení" to get source).
+
+Use on your own risk.
+
+Tested on Ubuntu:
+
+	lsb_release -a
+	No LSB modules are available.
+	Distributor ID:	Ubuntu
+	Description:	Ubuntu 12.04.4 LTS
+	Release:	12.04
+	Codename:	precise
 
 On Ubuntu prepare:
 
@@ -26,7 +40,7 @@ rerun bundle install
 	rails generate scaffold Product title:string description:text \
 	 image_url:string price:decimal
 
-generates:
+generates error:
 
 	runtimes.rb:22: syntax error
 
@@ -37,11 +51,26 @@ solution: install ruby 1.9
 	ruby -v
 	ruby 1.9.3p0 (2011-10-30 revision 33570) [i686-linux]
 	sudo apt-get remove ruby1.8-dev
-	# dangerous! - remove references to old bundle etc...
+	# dangerous! - remove references to old rails/bundle etc...
 	sudo rm /usr/local/bin/*
 	# install rails again - for ruby 1.9.3
 	sudo gem install rails -v 3.2.19
 
-install bundle again:
+Again install bundle
 
+	bundle install # sudo will prompt for your password
+
+And finally(?) scaffold:
+
+
+	rails generate scaffold Product title:string description:text \
+	 image_url:string price:decimal
+
+Oooopss again:
+
+	Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+
+So install TheRubyRacer:
+
+	sudo gem install therubyracer
 

@@ -74,3 +74,9 @@ So install TheRubyRacer:
 
 	sudo gem install therubyracer
 
+
+Added to github:
+
+	git remote add origin git@github.com:hpaluch/depot.git
+	...
+	git push -u origin master	

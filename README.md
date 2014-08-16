@@ -116,6 +116,7 @@ Go to http://localhost:3000/products
 
 Adjusted textarea, diff on https://github.com/hpaluch/depot/commit/559c66f3f5123b77158fbc5557b2d616c3a50513#diff-1
 
+Finished A1 chapter.
 
 
 

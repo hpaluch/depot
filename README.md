@@ -102,3 +102,16 @@ What? Aarrrrgh!
 
 Yeah! Done.
 
+Added two decimals to price in file db/migrate/20140816162054_create_products.rb
+
+Synchronize db:
+
+	rake db:migrate
+
+Run rails!
+
+	rails server
+
+Go to http://localhost:3000/products
+
+

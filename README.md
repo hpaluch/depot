@@ -102,7 +102,7 @@ What? Aarrrrgh!
 
 Yeah! Done.
 
-Added two decimals to price in file db/migrate/20140816162054_create_products.rb
+Added two decimals to price in file db/migrate/20140816162054_create_products.rb. See diff at https://github.com/hpaluch/depot/commit/583fc6a3ab67f1ba93b48dd955404bf5030e27f1#diff-1
 
 Synchronize db:
 

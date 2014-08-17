@@ -132,4 +132,15 @@ Ooops again. No tag on github... Aha!:
 
 Wow!  Definitely tagged on github, see https://github.com/hpaluch/depot/releases/tag/A1-finished
 
+A2
+--
 
+Added seeds, images and stylesheets from book
+
+	b=~/ruby-on-rails/depot_b
+	cp -r $b/public/images public
+	cp $b/db/seeds.rb db/
+	# Huh - my rails app does not contain public/stylesheets/scaffold.css
+	mkdir public/stylesheets
+	cp $b/public/stylesheets/depot.css public/stylesheets/
+  

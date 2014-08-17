@@ -153,4 +153,9 @@ Moved depot.css into assets (this is new feature or rails 3.2 - not covered in t
 	git mv public/stylesheets/depot.css app/assets/stylesheets/
 	rmdir public/stylesheets
 
+Copy new products/index template from book source:
+
+	b=~/ruby-on-rails/depot_b
+	cp $b/app/views/products/index.html.erb app/views/products/
+
 

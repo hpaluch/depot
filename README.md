@@ -148,4 +148,9 @@ Seed data:
 
 	rake db:seed
 
+Moved depot.css into assets (this is new feature or rails 3.2 - not covered in the book):
+
+	git mv public/stylesheets/depot.css app/assets/stylesheets/
+	rmdir public/stylesheets
+
 

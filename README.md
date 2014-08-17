@@ -158,4 +158,7 @@ Copy new products/index template from book source:
 	b=~/ruby-on-rails/depot_b
 	cp $b/app/views/products/index.html.erb app/views/products/
 
+We rename depot.css to zzz_depot.css to ensure that it is loaded as last CSS file (so we can override scaffold styles):
+
+	git mv app/assets/stylesheets/depot.css app/assets/stylesheets/zzz_depot.css
 

@@ -144,3 +144,8 @@ Added seeds, images and stylesheets from book
 	mkdir public/stylesheets
 	cp $b/public/stylesheets/depot.css public/stylesheets/
   
+Seed data:
+
+	rake db:seed
+
+

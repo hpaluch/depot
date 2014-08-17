@@ -162,3 +162,8 @@ We rename depot.css to zzz_depot.css to ensure that it is loaded as last CSS fil
 
 	git mv app/assets/stylesheets/depot.css app/assets/stylesheets/zzz_depot.css
 
+After validation there is a test:
+
+	rake test
+
+
